@@ -1,0 +1,25 @@
+/* AwareWolf design tokens v2 */
+:root{
+  --aw-vermilion:#F23A0E;   /* brand + practice; the only accent in UI */
+  --aw-ember:#B8260A;       /* vermilion's shadow: hover, pressed, low-emphasis crescent */
+  --aw-night:#0F1216;       /* video ground, dark UI */
+  --aw-night-2:#171B22;
+  --aw-line:#2A2F38;
+  --aw-bone:#F2EDE4;        /* reading ground, logo ground */
+  --aw-bone-2:#E6DFD2;
+  --aw-bone-3:#CFC8BC;
+  --aw-gold:#FFD24A;        /* SPOKEN VOICE ONLY: burned captions, big lines. never UI */
+  --aw-lab:#6FD3C7;         /* EVIDENCE ONLY: study lower-thirds, "finding" tier tag */
+  --aw-indigo:#0B1420;      /* renewed identity ground */
+  --aw-indigo-2:#132630;    /* pressed states and dimensional panels */
+  --aw-peacock:#0A6F6B;     /* accessible accent on bone */
+  --aw-peacock-light:#78D7D0; /* accessible accent on night */
+  --aw-moon:#C2CBD3;        /* Shiva / lunar structure */
+  --aw-antique-gold:#B99046; /* Vishnu / frontier evidence */
+  --aw-font-wordmark:Merriweather,Georgia,serif;          /* weight 900; the name only */
+  --aw-font-display:Anton,Impact,"Arial Narrow",sans-serif; /* headlines, always lowercase */
+  --aw-font-body:Karla,"Helvetica Neue",Arial,sans-serif;
+  --aw-font-sanskrit:"Tiro Devanagari Sanskrit",serif;     /* Sanskrit only, always with English beneath */
+}
+/* ratios: 70% ground / 20% ink / 10% vermilion. gold + teal are semantic, not decorative. */
+/* contrast: bone on night 15:1; night on vermilion 5.9:1; bone on vermilion 3.4:1 (large text only) */
