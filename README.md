@@ -2,6 +2,8 @@
 
 A complete brandkit plus a seven-page static site. There is no build step and no framework.
 
+For the full implementation, asset, maintenance, deployment, rollback, and QA record, read [`HANDOFF.md`](HANDOFF.md).
+
 ## Source of truth
 
 Open `awarewolf_brand-system_v3.html`. This is the current 14-chapter brand system and replaces v2 for all new work. It defines the meaning, voice, visual identity, colour roles, typography, motion, content architecture, applications, checks, and source map.
