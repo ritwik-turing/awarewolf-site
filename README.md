@@ -18,8 +18,8 @@ The HTML immediately above that script is the no-JavaScript fallback. Keep it al
 
 Keep the same filenames and replace the files in `brand/`, or update the `src` values site-wide:
 
-- `brand/awarewolf_identity_v13.webp` is the current full emblem and `aware._wolf_` lockup. Its Shiva-orange and Narayan-blue halves use brighter saturated midtones and metallic highlights while retaining black depth. Its lab-teal bridge is a localized quantum wave packet: oscillations peak near the centre and taper toward both edges. It uses only `Ĥψ`—the Hamiltonian operator acting on the wavefunction—at the centre.
-- `brand/awarewolf_mark_v13.webp` is the current emblem-only navigation mark.
+- `brand/awarewolf_identity_v14.webp` is the current full emblem and `aware._wolf_` lockup. Its Shiva half uses restrained burnished copper-orange and its Vishnu half uses deep polished Narayan sapphire, with soft highlights and preserved black depth. Its lab-teal bridge is a localized quantum wave packet: oscillations peak near the centre and taper toward both edges. It uses only `Ĥψ`—the Hamiltonian operator acting on the wavefunction—at the centre.
+- `brand/awarewolf_mark_v14.webp` is the current emblem-only navigation mark.
 - The original supplied assets remain beside them for provenance and rollback.
 
 The colour system assigns the approved reference orange-red (`#DF4B29`) to Shiva, Narayan blue (`#2256A3`) to Vishnu, and evidence teal (`#6FD3C7`) to the quantum bridge alone. Their lighter/darker companions exist only to maintain WCAG AA contrast. Keep the quantum bridge continuous across the two halves; never repeat it as unrelated decoration on each side.
