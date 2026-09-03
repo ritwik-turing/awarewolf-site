@@ -1,24 +1,34 @@
-/* AwareWolf design tokens v3 — Shiva × Narayan */
+/* AwareWolf design tokens v4 — derived from the approved v15 emblem */
 :root{
-  --aw-shiva:#DF4B29;       /* exact orange-red sampled from the approved reference */
-  --aw-shiva-ink:#A9321D;   /* AA text companion for bone surfaces */
-  --aw-narayan:#2256A3;     /* Narayan blue; AA on bone */
-  --aw-narayan-ink:#16427F; /* pressed and high-contrast blue on bone */
-  --aw-narayan-light:#79A8FF; /* AA blue on night */
-  --aw-vermilion:var(--aw-shiva); /* legacy alias */
-  --aw-ember:var(--aw-shiva-ink); /* legacy alias */
-  --aw-night:#0A0E16;       /* blue-black ground */
-  --aw-night-2:#121B2A;
-  --aw-line:#2B3850;
-  --aw-bone:#F1EDE5;        /* sampled reference ground */
-  --aw-bone-2:#E6DFD2;
-  --aw-bone-3:#CFC8BC;
-  --aw-gold:#FFD24A;        /* SPOKEN VOICE ONLY: burned captions, big lines. never UI */
-  --aw-lab:#6FD3C7;         /* EVIDENCE ONLY: study lower-thirds, "finding" tier tag */
-  --aw-font-wordmark:Merriweather,Georgia,serif;          /* weight 900; the name only */
-  --aw-font-display:Anton,Impact,"Arial Narrow",sans-serif; /* headlines, always lowercase */
+  /* elemental identity */
+  --aw-shiva:#DA8835;          /* agni amber for night surfaces; 6.6:1 */
+  --aw-shiva-ink:#89370F;      /* ember earth for bone surfaces; 6.6:1 */
+  --aw-narayan:#226D8A;        /* deep jal blue for bone surfaces; 4.8:1 */
+  --aw-narayan-ink:#205163;    /* pressed jal blue on bone; 7.1:1 */
+  --aw-narayan-light:#5AAFD0;  /* living ocean blue for night surfaces */
+
+  /* field and materials */
+  --aw-quantum:#4FCAD7;        /* evidence on night; 9.3:1 */
+  --aw-quantum-ink:#146D76;    /* evidence on bone; 5.0:1 */
+  --aw-panchaloha:#C28A45;     /* frontier tags + spoken emphasis only */
+  --aw-lotus:#C97467;          /* identity artwork only */
+  --aw-terracotta:#9A5A26;     /* identity artwork only */
+  --aw-basalt:#212729;         /* identity material + primary ink */
+  --aw-wood:#5F4933;           /* identity artwork only */
+
+  /* grounds */
+  --aw-night:#091625;
+  --aw-night-2:#11364A;
+  --aw-line:#205163;
+  --aw-bone:#F1E8D6;
+  --aw-bone-2:#E6D9C3;
+  --aw-bone-3:#D0AD8B;
+  --aw-ink:#212729;
+  --aw-stone:#5E5F56;
+
+  --aw-font-display:Anton,Impact,"Arial Narrow",sans-serif;
   --aw-font-body:Karla,"Helvetica Neue",Arial,sans-serif;
-  --aw-font-sanskrit:"Tiro Devanagari Sanskrit",serif;     /* Sanskrit only, always with English beneath */
+  --aw-font-sanskrit:"Tiro Devanagari Sanskrit",serif;
 }
-/* ratios: 70% ground / 20% ink / 5% Shiva / 5% Narayan. gold stays spoken-only; teal stays evidence-only. */
-/* contrast: Shiva ink on bone 5.7:1; Narayan on bone 6.1:1; Shiva on night 4.6:1; Narayan light on night 7.9:1. */
+/* UI ratio: 70% ground / 20% ink / 5% agni / 5% jal. */
+/* quantum is evidence-only; panchaloha is frontier/spoken-only; lotus, terracotta, basalt and wood are artwork materials. */

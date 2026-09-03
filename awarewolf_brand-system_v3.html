@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AwareWolf brand system v3 — science, sanatan and play through aware presence.">
+<title>AwareWolf Brand System v3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="brand/tokens.css">
+<link rel="icon" type="image/png" sizes="64x64" href="brand/awarewolf_favicon_v15.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Tiro+Devanagari+Sanskrit&display=swap">
+<style>
+:root{
+  --night:var(--aw-night); --night2:var(--aw-night-2); --line:var(--aw-line);
+  --bone:var(--aw-bone); --bone2:var(--aw-bone-2); --bone3:var(--aw-bone-3);
+  --accent:var(--aw-shiva-ink); --accent2:var(--aw-narayan); --evidence:var(--aw-quantum-ink); --frontier:var(--aw-panchaloha);
+  --bg:var(--bone); --bg2:var(--bone2); --bg3:#fff; --ink:var(--aw-ink); --ink2:var(--aw-stone); --ink3:var(--aw-stone); --rule:var(--bone3);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Karla,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+.disp{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:lowercase;letter-spacing:.01em;line-height:.95;text-wrap:balance}
+.skt{font-family:"Tiro Devanagari Sanskrit",serif;font-weight:400}
+.thesis{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;letter-spacing:.01em;line-height:.95;text-transform:lowercase}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);font-weight:700;margin:0 0 10px}
+p{max-width:66ch}
+a{color:var(--accent)}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:0;max-width:1240px;margin:0 auto}
+nav.toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;padding:36px 20px;border-right:1px solid var(--rule);font-size:13.5px}
+nav.toc ol{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+nav.toc a{color:var(--ink2);text-decoration:none;display:flex;gap:10px}
+nav.toc a b{color:var(--accent);font-family:Anton,Impact,sans-serif;font-weight:400;min-width:22px}
+nav.toc a:hover{color:var(--ink)}
+main{padding:0 40px 80px;min-width:0}
+section{padding:64px 0;border-top:1px solid var(--rule)}
+section:first-child{border-top:0}
+section h2.disp{font-size:clamp(34px,4.6vw,54px);margin:0 0 10px}
+section h2.disp span{color:var(--accent)}
+.lede{color:var(--ink2);font-size:18.5px;margin:0 0 8px;max-width:60ch}
+.num{font-family:Anton,Impact,sans-serif;color:var(--accent);font-size:14px;letter-spacing:.14em}
+@media (max-width:900px){ .layout{grid-template-columns:1fr} nav.toc{position:static;height:auto;border-right:0;border-bottom:1px solid var(--rule)} nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:12px} main{padding:0 20px 60px} }
+
+/* cover */
+.cover{background:var(--night);color:var(--bone);padding:64px 40px 56px;border-bottom:1px solid var(--line)}
+.cover .in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.cover img{width:100%;max-width:520px;display:block}
+.cover h1{margin:0;font-size:clamp(28px,3vw,40px);color:var(--bone)}
+.cover .tag{font-size:clamp(20px,2.2vw,26px);color:var(--bone3);margin:14px 0 0;max-width:34ch}
+.cover .skt{color:var(--aw-quantum);font-size:22px;display:block;margin-top:22px}
+.cover .mani em{color:var(--aw-shiva)}
+@media (max-width:900px){ .cover .in{grid-template-columns:1fr} .cover{padding:44px 20px} }
+
+/* blocks */
+.card{background:var(--bg2);border:1px solid var(--rule);padding:22px 22px 20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+@media (max-width:900px){ .grid2,.grid3{grid-template-columns:1fr} }
+.card h3{margin:0 0 6px;font-size:26px}
+.card .skt{font-size:40px;line-height:1;color:var(--accent);display:block;margin-bottom:6px}
+.card p{margin:0;color:var(--ink2);font-size:15.5px}
+.card.lab .skt{color:var(--evidence)} .card.play .skt{color:var(--accent2)}
+.translation{display:block;margin-top:4px;color:var(--ink2);font-size:14px}
+.mani{font-size:clamp(22px,2.4vw,30px);line-height:1.25;max-width:30ch;margin:26px 0 0}
+.mani em{font-style:normal;color:var(--accent)}
+blockquote{margin:26px 0 0;padding:20px 24px;border-left:4px solid var(--accent);background:var(--bg2);font-size:19px;line-height:1.4;max-width:70ch}
+blockquote small{display:block;margin-top:8px;color:var(--ink3);font-size:13px}
+
+/* names */
+.name{display:grid;grid-template-columns:200px 1fr 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--rule)}
+.name:first-of-type{border-top:0}
+.name .skt{font-size:38px;line-height:1.1;color:var(--accent);display:block}
+.name .iast{font-family:var(--aw-font-body);font-weight:700;font-size:18px;margin:6px 0 2px}
+.name .src{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+.name h4{margin:0 0 6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+.name p{margin:0;font-size:15.5px;color:var(--ink2)}
+.name .rule{margin-top:10px;padding:10px 12px;background:var(--bg2);border-left:3px solid var(--accent);color:var(--ink);font-size:15px}
+.name .tier{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:2px;margin-bottom:8px}
+.t1{background:var(--aw-quantum);color:var(--night)} .t2{background:var(--frontier);color:var(--night)} .t3{background:var(--bone3);color:var(--night)}
+@media (max-width:900px){ .name{grid-template-columns:1fr} }
+
+/* tables */
+.tablewrap{overflow-x:auto;margin-top:22px}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:640px}
+th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+td.k{font-family:Anton,Impact,sans-serif;font-size:19px;text-transform:lowercase;white-space:nowrap}
+td.key{font-family:Anton,Impact,sans-serif;color:var(--accent);letter-spacing:.04em}
+.mono{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:var(--bg2);padding:14px 16px;border:1px solid var(--rule);white-space:pre-wrap;max-width:70ch}
+ul.tight{margin:10px 0 0;padding-left:18px;color:var(--ink2)} ul.tight li{margin:5px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px}
+@media (max-width:900px){ .two{grid-template-columns:1fr} }
+.two h4{margin:0 0 6px;font-size:22px}
+.do h4{color:var(--accent)} .dont h4{color:var(--ink3)}
+
+/* logo section */
+.logos{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.logos .tile{padding:28px;display:flex;align-items:center;justify-content:center;border:1px solid var(--rule);min-height:170px}
+.logos .tile img{max-width:100%;max-height:120px}
+.logos .tile.dark{background:var(--night)} .logos .tile.light{background:#fff}
+.logos .tile.field{background:var(--night2)}
+.logos small{display:block;margin-top:8px;color:var(--ink3);font-size:12.5px}
+.sw{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:22px}
+.sw div{aspect-ratio:1/1.1;border:1px solid var(--rule);display:flex;flex-direction:column;justify-content:flex-end;padding:10px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bone)}
+.sw .light{color:var(--night)}
+@media (max-width:900px){ .sw{grid-template-columns:repeat(2,1fr)} .logos{grid-template-columns:1fr} }
+.type .spec{background:var(--bg2);border:1px solid var(--rule);padding:22px}
+.type .role{color:var(--ink2);font-size:14px;margin:6px 0 0}
+
+/* applications */
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+@media (max-width:900px){ .apps{grid-template-columns:1fr} }
+.phone{background:var(--night);aspect-ratio:9/16;position:relative;overflow:hidden;border:1px solid var(--line);background-image:radial-gradient(120% 70% at 50% 110%, #2B3A2E 0%, transparent 60%),radial-gradient(90% 60% at 50% -10%, #23324A 0%, transparent 60%)}
+.phone .cap{position:absolute;left:0;right:0;top:13%;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.phone .cap span{display:inline-block;background:rgba(0,0,0,.45);color:#fff;font-family:Anton,Impact,sans-serif;text-transform:lowercase;font-size:20px;padding:6px 10px}
+.phone .cap span.g{color:var(--frontier);font-size:28px}
+.phone .mark{position:absolute;right:10px;bottom:12px;width:46px;opacity:.95}
+.phone .lt{position:absolute;left:12px;bottom:40px;background:rgba(0,0,0,.6);color:var(--aw-quantum);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:5px 8px}
+.phone .lt b{color:#fff;display:block;font-size:11px;letter-spacing:.06em;text-transform:none;font-weight:700}
+.avatar{width:120px;height:120px;border-radius:50%;background:var(--bone);display:flex;align-items:center;justify-content:center;border:1px solid var(--rule)}
+.avatar img{width:78%}
+.appcap{font-size:13px;color:var(--ink3);margin:8px 0 0}
+.check{columns:2;column-gap:28px;margin:18px 0 0;padding:0;list-style:none;font-size:15px}
+.check li{break-inside:avoid;padding:8px 0 8px 28px;position:relative;color:var(--ink2);border-bottom:1px solid var(--rule)}
+.check li::before{content:"";position:absolute;left:0;top:12px;width:14px;height:14px;border:2px solid var(--accent);border-radius:2px}
+@media (max-width:900px){ .check{columns:1} }
+footer{padding:28px 40px 70px;color:var(--ink3);font-size:13px;max-width:1240px;margin:0 auto}
+.src li{margin:4px 0;font-size:14px;color:var(--ink2)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="in">
+    <div>
+      <p class="eyebrow" style="color:var(--bone3)">brand system · v3 · september 2026</p>
+      <img src="brand/awarewolf_identity_v15.webp" width="640" height="640" alt="AwareWolf surrealist emblem: a symmetric Shiva and Narayana wolf, sacred natural-material artifacts, fire and cosmic ocean joined through a quantum field, with the handle aware dot underscore wolf underscore">
+      <h1 class="thesis">the witness who dances.</h1>
+      <p class="tag">a bridge between the lab and the mat, built through aware presence — the secret sauce for getting better at anything.</p>
+      <span class="skt" lang="sa">सत् · चित् · आनन्द</span>
+      <span class="translation" style="color:var(--bone3)">truth · awareness · joy — science · sanatan · play</span>
+    </div>
+    <div>
+      <p class="mani" style="color:var(--bone)">a physicist and a rishi are asking what reality is. <em>i'm the guy in the middle,</em> reading the paper, sitting on the mat, and bringing full attention to the next point.</p>
+      <p style="color:var(--bone3);font-size:14px;margin-top:18px;max-width:44ch">This document is the operating system for everything AwareWolf publishes: what it believes, how it speaks, how it looks, what it will never do. It is written to be checked against, not admired.</p>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="toc" aria-label="chapters"><ol>
+  <li><a href="#c1"><b>01</b> manifesto</a></li>
+  <li><a href="#c2"><b>02</b> the name, read through the texts</a></li>
+  <li><a href="#c3"><b>03</b> cosmology: two gods, one wolf</a></li>
+  <li><a href="#c4"><b>04</b> the nine names</a></li>
+  <li><a href="#c5"><b>05</b> the quantum standard</a></li>
+  <li><a href="#c6"><b>06</b> voice &amp; language</a></li>
+  <li><a href="#c7"><b>07</b> logo</a></li>
+  <li><a href="#c8"><b>08</b> colour, type, motif</a></li>
+  <li><a href="#c9"><b>09</b> video, motion, sound</a></li>
+  <li><a href="#c10"><b>10</b> content architecture</a></li>
+  <li><a href="#c11"><b>11</b> the pack</a></li>
+  <li><a href="#c12"><b>12</b> applications</a></li>
+  <li><a href="#c13"><b>13</b> pre-publish checklist</a></li>
+  <li><a href="#c14"><b>14</b> sources</a></li>
+</ol></nav>
+
+<main>
+
+<section id="c1">
+  <p class="num">01</p>
+  <h2 class="disp">manifesto</h2>
+  <p class="lede">Read aloud in your voice, this is the whole brand. Everything else in this document is a way of keeping this true.</p>
+  <blockquote class="disp" style="font-size:24px;line-height:1.25">
+    there was a ten-year-old version of you who loved playing anything.<br>
+    then school happened. work happened. the scrolling happened.<br>
+    that's the day you got old. not a birthday. that day.<br><br>
+    the rishis asked what the witness is.<br>
+    the physicists ask what can be measured.<br>
+    different questions. sometimes they rhyme.<br><br>
+    i read the paper, i sit on the mat, and then i go play pickleball.<br>
+    i'm great at many things. at the others, i stay present and keep getting up until i get better.<br>
+    i'll show you the study, the practice, and what aware presence changes.<br><br>
+    stay awake. stay wild.<br>
+    play… everything.
+    <small>manifesto · v3 · the closing two lines are fixed phrases in the brand</small>
+  </blockquote>
+</section>
+
+<section id="c2">
+  <p class="num">02</p>
+  <h2 class="disp">the name, <span>read through the texts</span></h2>
+  <p class="lede">The name was chosen as a pun. It turns out to be a citation.</p>
+  <div class="grid2">
+    <div class="card"><span class="skt" lang="sa">वृक</span><span class="translation">vṝka · the wolf</span><h3 class="disp">vṝka — the wolf</h3><p>Sanskrit for wolf, attested in the Ṛgveda. The wolf is the one animal that plays its whole life — not just as a pup. Pack, instinct, night, howl. A werewolf changes when the moon comes out. An <b>aware</b> wolf is the one that noticed it changing.</p></div>
+    <div class="card"><span class="skt" lang="sa">मृगव्याध</span><span class="translation">mṛgavyādha · the hunter star</span><h3 class="disp">mṛgavyādha — the hunter star</h3><p>A name of Rudra-Śiva in the Sahasranāma: literally "the deer-hunter." In Vedic astronomy it is <b>Sirius</b> — the brightest star in the sky, which the Greeks later called the Dog Star. Your wolf is a name of Śiva that points at a star.</p></div>
+    <div class="card"><span class="skt" lang="sa">श्वान</span><span class="translation">svāna · the dog who stayed</span><h3 class="disp">svāna — the dog who stayed</h3><p>In the Mahābhārata's final book, a dog follows Yudhiṣṭhira up the mountain when everyone else has fallen. He refuses heaven without it. The dog is Dharma. Sirius again. This is the brand's word for its followers: <b>the pack</b> — the ones who stay.</p></div>
+    <div class="card"><span class="skt" lang="sa">चन्द्रमौलि</span><span class="translation">chandramauli · moon-crowned</span><h3 class="disp">chandramauli — moon-crowned</h3><p>Śiva wears the crescent moon: time in phases, the mind that waxes and wanes, cool light after fire. The final emblem does not use the moon as a frame. It carries the same idea of phase through fire, water and the quantum field — transition without disappearance.</p></div>
+  </div>
+  <p style="margin-top:22px;color:var(--ink2)">The lesson for the brand: <b>never invent symbolism. Find it.</b> Every visual or verbal move should be traceable either to a text with a chapter, or to a paper with a year.</p>
+</section>
+
+<section id="c3">
+  <p class="num">03</p>
+  <h2 class="disp">cosmology: <span>two gods, one wolf</span></h2>
+  <p class="lede">Sanatan gives the brand two modes, and the quantum field gives them one meeting place. The brand is spiritually open and scientifically agnostic about metaphysical mechanisms: reverent with symbols, exact with claims.</p>
+  <div class="grid2">
+    <div class="card"><p class="eyebrow">nārāyaṇa mode · the witness</p><h3 class="disp">sākṣī · kṣetrajña · yogaḥ</h3><p>Nārāyaṇa sustains. He is the witness (Sākṣī), the knower of the field (Kṣetrajña), the joining (Yogaḥ). This is the brand's <b>lab and mat</b> voice: steady, precise, citing the journal and the verse, saying the limitation before the claim. Order. Attention. Receipts.</p></div>
+    <div class="card"><p class="eyebrow">śiva mode · the dancer</p><h3 class="disp">naṭarāja · paśupati · mṛgavyādha</h3><p>Śiva changes form. He is the dancer, the lord of animals, the hunter-star. This is the brand's <b>field</b> voice: the run, the return, the howl, the next pickleball point. Wildness. Play. Practice. The Śiva mode is what keeps the Nārāyaṇa mode from becoming a lecture.</p></div>
+  </div>
+  <blockquote>AwareWolf lives at the meeting point: <b>the witness who dances.</b> Every piece of content should have both — one true thing and one live thing. A study with no sweat is a lecture. Sweat with no study is a highlight reel.<small>brand thesis</small></blockquote>
+  <blockquote>The emblem is not a claim that physics proves a tradition, or that traditions are interchangeable. It is a map of the questions Ritwik holds together: what is real, what is aware, and what changes when attention enters the field.<small>agnostic stance</small></blockquote>
+  <div class="grid3">
+    <div class="card lab"><span class="skt" lang="sa">सत्</span><span class="translation">sat · truth · science</span><h3 class="disp">the lab</h3><p>What is actually known, with the caveats out loud. Journal + year on screen, every time.</p></div>
+    <div class="card"><span class="skt" lang="sa">चित्</span><span class="translation">chit · awareness · sanatan</span><h3 class="disp">the mat</h3><p>Practice explained plainly and tested honestly. Sanskrit with translation, scripture with chapter and verse.</p></div>
+    <div class="card play"><span class="skt" lang="sa">आनन्द</span><span class="translation">ānanda · joy · play</span><h3 class="disp">the field</h3><p>Sport, music, dance, full attention. The proof that presence is not solemn. This earns the right to the other two.</p></div>
+  </div>
+</section>
+
+<section id="c4">
+  <p class="num">04</p>
+  <h2 class="disp">the <span>nine names</span></h2>
+  <p class="lede">Nine names from the two Sahasranāmas, each paired with a real finding from physics or neuroscience and turned into a rule the brand can be held to. The pairings are <b>rhymes, not proofs</b> — and the brand says so, every time. The tier tag is the honesty label: <span class="tier t1">finding</span> settled science · <span class="tier t2">frontier</span> real but contested · <span class="tier t3">interpretation</span> philosophy, not data.</p>
+
+  <div class="name"><div><span class="skt" lang="sa">साक्षी</span><span class="translation">sākṣī · the witness</span><div class="iast">Sākṣī</div><div class="src">viṣṇu sahasranāma · 15</div></div>
+    <div><h4>the name</h4><p><b>The witness.</b> Śaṅkara: the one who sees everything directly, as it is. Not the doer — the one who watches the doing.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t3">interpretation</span><p>Quantum theory has no "view from nowhere." In QBism and relational interpretations, a measurement outcome is always an outcome <i>for someone</i>. Physics cannot get rid of the witness; it can only argue about what the witness is.</p>
+    <div class="rule"><b>Rule:</b> first person, always. We say what we saw and did. Never "studies show" without "and here is what happened when I tried it."</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">क्षेत्रज्ञ</span><span class="translation">kṣetrajña · the knower of the field</span><div class="iast">Kṣetrajña</div><div class="src">viṣṇu sahasranāma · 16 · gītā 13.1–2</div></div>
+    <div><h4>the name</h4><p><b>The knower of the field.</b> The Gītā's thirteenth chapter: the body is the field (kṣetra); that which knows it is the knower. The field is not you. You are what watches the field.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t1">finding</span><p>In quantum field theory particles are not things; they are excitations of fields that fill all of space. The field is primary, the particle is an event in it. The Gītā's word for the body is the physicist's word for reality.</p>
+    <div class="rule"><b>Rule:</b> the "field" pillar is literal. Sport, court, pitch, ground. Every week the brand goes into a field and does something with its body, and that is the receipt for everything said about mind.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">विश्वम्</span><span class="translation">viśvam · the universe itself</span><div class="iast">Viśvam</div><div class="src">viṣṇu sahasranāma · 1</div></div>
+    <div><h4>the name</h4><p><b>The universe itself.</b> The first name. Not the maker of the whole — the whole. Everything that exists, as one.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t1">finding</span><p>Entanglement (Nobel 2022): two particles can share a single state such that neither has properties on its own — the relation is more fundamental than the parts. Physics has an experimental result that says "separateness is not the deepest layer."</p>
+    <div class="rule"><b>Rule:</b> never mock either side. The scientist and the sādhu are both serious people. Followers are "the pack," never "audience."</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">अक्षरम्</span><span class="translation">akṣaram · the imperishable</span><div class="iast">Akṣaram</div><div class="src">viṣṇu sahasranāma · 17</div></div>
+    <div><h4>the name</h4><p><b>The imperishable.</b> That which does not decay however much it is drawn on. Also the word for a syllable — the smallest indestructible unit of speech.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t2">frontier</span><p>Quantum information is conserved — unitarity says information is never destroyed, only scrambled. This is why the black-hole information paradox is a paradox, and why the 2019–2025 "island" calculations that recover information from evaporating black holes were treated as a breakthrough. Still frontier.</p>
+    <div class="rule"><b>Rule:</b> receipts are imperishable. Every claim keeps its source; every reel keeps its footage dates; nothing is said that can't be found again.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">योगः</span><span class="translation">yogaḥ · the joining</span><div class="iast">Yogaḥ</div><div class="src">viṣṇu sahasranāma · 18</div></div>
+    <div><h4>the name</h4><p><b>The joining.</b> From <i>yuj</i>, to yoke. Śaṅkara reads it as the means by which the many are brought to the one. Not a pose — a union.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t1">finding</span><p>Coherence: many particles acting as a single quantum object. The 2025 Nobel Prize in Physics (Clarke, Devoret, Martinis) honoured the 1985 proof that an entire electrical circuit — billions of electrons — can tunnel as one. Quantum is not only tiny. It is what happens when the many move as one.</p>
+    <div class="rule"><b>Rule:</b> cadence is a practice. One field post a week, one lab post a fortnight, one evening whenever it happens. Same day, same time, the way a practice is kept.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">आनन्दः</span><span class="translation">ānandaḥ · joy</span><div class="iast">Ānandaḥ · Nandanaḥ · Nandaḥ</div><div class="src">viṣṇu sahasranāma · ~525–527</div></div>
+    <div><h4>the name</h4><p><b>Bliss; the giver of joy; the one full of joyful things.</b> Three names in a row, as if once was not enough. Joy is not a reward in this tradition. It is a description of the ground.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t1">finding</span><p>A 2025 randomised trial (Scientific Reports) found a structured awe practice reduced stress and depressive symptoms and raised well-being. Awe — the feeling of something vast that makes you small — is the one emotion that reliably shrinks the self-focused network in the brain. Play produces it for free.</p>
+    <div class="rule"><b>Rule:</b> show the practice. The return is the receipt that this is joy and not performance. No reel ships without one honest moment of learning.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">पशुपति</span><span class="translation">paśupati · lord of animals</span><div class="iast">Paśupati</div><div class="src">śiva sahasranāma · anuśāsana parva 17</div></div>
+    <div><h4>the name</h4><p><b>Lord of animals; lord of all bound beings.</b> Śiva as the one who sits among creatures rather than above them. Also the oldest name in the list — a Paśupati seal appears in the Indus Valley.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t2">frontier</span><p>Quantum biology: photosynthetic complexes appear to use quantum coherence to move energy with near-perfect efficiency (RSC review, 2026); birds may navigate by a spin-chemistry compass. Living matter uses quantum effects. Whether the brain does is the open question the new diamond-sensor tools (2026) are built to answer.</p>
+    <div class="rule"><b>Rule:</b> body first. The brand never talks about awareness from a chair for more than one post in a row. The next one is outdoors, sweating.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">मृगव्याध</span><span class="translation">mṛgavyādha · the hunter-star</span><div class="iast">Mṛgavyādha</div><div class="src">śiva sahasranāma · sirius</div></div>
+    <div><h4>the name</h4><p><b>The hunter-star.</b> Rudra as the arrow aimed at the deer (Orion). One target, held steady, in the dark. The brightest star in the sky is a name for aim.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t3">interpretation</span><p>Attention is the one thing every consciousness theory agrees matters and no one can define. The 2025 COGITATE experiment (Nature; 256 participants, seven years, $20M) tested the two leading theories against each other and found both wanting — conscious content lived in the back of the brain, not the frontal "CEO." The hunt is still on.</p>
+    <div class="rule"><b>Rule:</b> one target per post. One keyword (PLAY or AWAKE), one study, one practice, one sport. Never two asks in a caption.</div></div></div>
+
+  <div class="name"><div><span class="skt" lang="sa">चन्द्रमौलि</span><span class="translation">chandramauli · moon-crowned</span><div class="iast">Chandramauli</div><div class="src">śiva sahasranāma · anuśāsana parva 17</div></div>
+    <div><h4>the name</h4><p><b>Moon-crowned.</b> Śiva wears the waxing crescent — time that returns, the mind that has phases, the cool light that comes after the fire of the third eye.</p></div>
+    <div><h4>the rhyme</h4><span class="tier t1">finding</span><p>Decoherence: quantum possibility becomes classical fact by phases — the wave-like state leaks into its surroundings and settles. Nothing collapses all at once; it dephases. The moon is a good model for how a mind clears: not a switch, a cycle.</p>
+    <div class="rule"><b>Rule:</b> phase is a rhythm, not a logo frame. The field-knot is the working motif: two elemental paths meeting through one quantum seam. Content moves in phases: hook → truth → practice → play → howl.</div></div></div>
+</section>
+
+<section id="c5">
+  <p class="num">05</p>
+  <h2 class="disp">the <span>quantum standard</span></h2>
+  <p class="lede">"Quantum" is the most abused word in spiritual content. AwareWolf earns the right to use it by labelling every quantum claim with its tier, on screen.</p>
+  <div class="grid3">
+    <div class="card"><span class="tier t1">finding</span><h3 class="disp">settled</h3><p>Superposition, entanglement, tunnelling, decoherence, quantum field theory, macroscopic quantum states (Nobel 2025). Say these plainly. No hedge needed beyond "this is physics, not metaphysics."</p></div>
+    <div class="card"><span class="tier t2">frontier</span><h3 class="disp">real but contested</h3><p>Quantum effects in biology (photosynthesis strong, brain unknown); microtubules and anaesthesia (Neuroscience of Consciousness, 2025 — argued, not accepted); black-hole information recovery. Say "some physicists argue," name them, and say most colleagues disagree.</p></div>
+    <div class="card"><span class="tier t3">interpretation</span><h3 class="disp">philosophy</h3><p>What measurement means; whether the observer matters; QBism, relational QM, many-worlds; consciousness-first metaphysics (Kastrup). Say "this is an interpretation" and never present it as a result.</p></div>
+  </div>
+  <div class="two">
+    <div class="do"><h4 class="disp">say</h4><ul class="tight">
+      <li>"the questions have started to rhyme."</li>
+      <li>"this is physics. the meaning is mine."</li>
+      <li>"twenty people, no control group — so, honestly, we don't know."</li>
+      <li>"some physicists argue X. most don't. it's being tested."</li>
+      <li>"the Gītā's word for the body is the physicist's word for reality. that's a coincidence worth sitting with."</li>
+    </ul></div>
+    <div class="dont"><h4 class="disp">never</h4><ul class="tight">
+      <li>"quantum physics proves…" / "science has confirmed the Vedas."</li>
+      <li>"the observer creates reality" stated as fact.</li>
+      <li>"vibration", "frequency", "manifest", "energy" as physics words.</li>
+      <li>"ancient wisdom knew" without the verse.</li>
+      <li>Any claim without a journal and a year on screen.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="c6">
+  <p class="num">06</p>
+  <h2 class="disp">voice <span>&amp; language</span></h2>
+  <p class="lede">First person, lowercase, present tense. Curious, not certain. Confident without pretending mastery. You are the friend who read the paper, sat on the mat, played the point, and stayed present long enough to get better — in that order, every week.</p>
+  <div class="grid2">
+    <div class="card"><h3 class="disp">the sentence shapes</h3><ul class="tight">
+      <li><b>Limitation → takeaway.</b> "small study. no control group. but still — a week of sitting did what a drug does."</li>
+      <li><b>Edge → next attempt.</b> "some of this comes easily. some makes me earn it. here's what changed when i stayed with the point."</li>
+      <li><b>Name → verse → what happened.</b> "kṣetrajña — knower of the field. gītā 13. so i went to an actual field."</li>
+      <li><b>Question, then silence.</b> "can i tell you something? …" Never answer your own hook in the same breath.</li>
+      <li><b>Ellipses over commas.</b> The pause is the punctuation.</li>
+    </ul></div>
+    <div class="card"><h3 class="disp">sanskrit rules</h3><ul class="tight">
+      <li>Devanāgarī on screen only with an English line directly beneath it.</li>
+      <li>Transliteration uses IAST (kṣetrajña, not kshetragna) in text; captions may drop diacritics for legibility.</li>
+      <li>Every scriptural line carries its address: text · chapter · verse. Sahasranāma names carry the name number where the recension is stable (Viṣṇu), and the source text where it isn't (Śiva).</li>
+      <li>Never translate a name loosely to fit a point. If the meaning is disputed, say "one reading is."</li>
+      <li>Sacred forms are not decoration. Outside the complete master emblem, a trishul, lotus, gadā, Ik Onkar or Dharmachakra appears only when the content is actually about it.</li>
+    </ul></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3 class="disp">glossary (public)</h3><div class="mono">sat — what is; truth
+chit — awareness; the knowing itself
+ānanda — joy; the ground, not the reward
+sākṣī — the witness
+kṣetra / kṣetrajña — the field / the knower of the field
+yoga — union; the yoking of the many to the one
+paśupati — lord of creatures
+mṛgavyādha — the hunter-star, sirius
+chandramauli — moon-crowned
+agni / jal — fire / water; the emblem's two elemental fields
+field-knot — the open wave-interference motif joining the two fields
+the pack — the people who stay</div></div>
+    <div class="card"><h3 class="disp">bio &amp; handles</h3><div class="mono">AwareWolf 🐺
+science × sanatan × play
+the witness who dances.
+aware presence is the secret sauce.
+comment PLAY or AWAKE ↓</div><p style="margin-top:10px">The public handle is always written and linked exactly as <b>@aware._wolf_</b>. Name renders as <b>AwareWolf</b> (one word, capital A and W) in prose; <b>aware wolf</b> lowercase only inside spoken-voice captions. The visual handle inside the identity is never typeset, repaired or replaced.</p></div>
+  </div>
+</section>
+
+<section id="c7">
+  <p class="num">07</p>
+  <h2 class="disp">logo</h2>
+  <p class="lede">The approved v15 identity is one authored surrealist field: a precisely symmetric wolf, Śiva on the left and Nārāyaṇa on the right, joined by quantum notation and wave behaviour rather than divided by it. The handle is part of the artwork and reads exactly <b>aware._wolf_</b>.</p>
+  <div class="logos">
+    <div><div class="tile dark"><img src="brand/awarewolf_identity_v15.webp" width="640" height="640" alt="Full AwareWolf v15 identity"></div><small>primary identity · emblem + exact handle · web, end cards, brand documents</small></div>
+    <div><div class="tile field"><img src="brand/awarewolf_mark_v15.webp" width="192" height="192" alt="AwareWolf v15 navigation mark"></div><small>official mark crop · navigation, avatar, favicon, corner stamp</small></div>
+    <div><div class="tile light"><img src="brand/awarewolf_identity_v15.webp" width="640" height="640" alt="Full AwareWolf v15 identity retaining its own night field"></div><small>on bone · the artwork keeps its own field; it is never knocked out or recoloured</small></div>
+    <div><div class="tile light"><div class="avatar"><img src="brand/awarewolf_mark_v15.webp" width="192" height="192" alt="AwareWolf v15 mark in a circular avatar crop"></div></div><small>avatar crop · centre the official mark; do not rebuild the wolf or symbols</small></div>
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>emblem field</th><th>what is present</th><th>what it means — and does not mean</th></tr></thead>
+    <tbody>
+      <tr><td class="k">one wolf</td><td>one bilaterally symmetric face; charcoal Śiva and jal-blue Nārāyaṇa</td><td>The witness and the dancer are two modes of one aware life. This is the brand thesis, not a theological claim that the deities are interchangeable.</td></tr>
+      <tr><td class="k">śiva · left</td><td>Kailash, trishul, wood-and-hide damaru, Nataraja fire, Shakti trikoṇa, rustic basalt liṅgam</td><td>Creation, dissolution, stillness and disciplined change. The damaru and flaming aureole are grounded in Nataraja iconography; the reduced arrangement is an artistic interpretation.</td></tr>
+      <tr><td class="k">nārāyaṇa · right</td><td>Kṣīra Sāgara, Ananta Shesha, Sudarshana, living padma, Kaumodakī, river-worn Shaligram</td><td>Preservation, order, protection and conscious rest. Multiple Shesha hoods form the protective canopy; seven is the brand's compositional count, not a claim of one canonical count.</td></tr>
+      <tr><td class="k">science · bridge</td><td><b>Ĥψ</b>, localized wave packet, phase-shifted paths, paired nodes, observation seam, curved field lines</td><td><b>Ĥψ</b> is the Hamiltonian operator acting on a wavefunction, taken from Schrödinger's equation. Wave-particle duality, superposition and entanglement are physics; consciousness and spiritual meaning are explicitly interpretation.</td></tr>
+      <tr><td class="k">open traditions</td><td>exact Ik Onkar glyph <b>ੴ</b>; carved Dharmachakra with exactly eight spokes</td><td>Respectful acknowledgements of Sikh oneness and the Buddhist path. They are not decorative, not claimed as Sanatan symbols, and not evidence that traditions teach an identical doctrine.</td></tr>
+      <tr><td class="k">paradox</td><td>Penrose stair at lower left; observer/observed profiles at lower right</td><td>Surrealist metaphors for impossible structure and reflexive awareness. They are visual questions, not scientific diagrams.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="two">
+    <div class="do"><h4 class="disp">rules</h4><ul class="tight">
+      <li>Clear space: one-twelfth of the identity's width on all sides.</li>
+      <li>Minimum digital sizes: full identity 280px; official mark crop 40px. Below that, the sacred and scientific details stop reading.</li>
+      <li>Use the full-colour files exactly as supplied. The opaque quantum-night field is part of the identity.</li>
+      <li>Keep the full identity square and the handle exact: <b>aware</b> is jal-blue; <b>._wolf_</b>, including punctuation, is agni-orange.</li>
+      <li>Corner stamp on video: official mark crop, 46px, bottom-right, from the moment the VO ends to the last frame.</li>
+      <li>Alt text names the symmetric Śiva/Nārāyaṇa wolf, fire, cosmic ocean and shared quantum field. It need not inventory every artifact.</li>
+    </ul></div>
+    <div class="dont"><h4 class="disp">never</h4><ul class="tight">
+      <li>No filters, recolouring, glow, flattening to one colour, transparent knockout, flip, stretch or unapproved crop.</li>
+      <li>Do not detach sacred artifacts for decorative stickers or change fixed counts: seven Shesha hoods and eight Dharmachakra spokes.</li>
+      <li>Do not add tilaks, forehead marks, a crescent, conch, deity body, generic galaxy, or any new symbol to the identity.</li>
+      <li>Do not typeset a replacement handle or repair punctuation with a text overlay. Use the artwork.</li>
+      <li>Do not auto-trace this into a vector; the material textures and surreal transitions are the identity. For work larger than the 1254px master can support, commission a faithful high-resolution recreation from the approved composition.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="c8">
+  <p class="num">08</p>
+  <h2 class="disp">colour, <span>type, motif</span></h2>
+  <p class="lede">Colour is cosmology before it is decoration. Agni marks Śiva's active field. Jal marks Nārāyaṇa's sustaining field. Quantum cyan joins them only when evidence or the field itself is present. Night and bone remain the two grounds.</p>
+  <div class="sw">
+    <div style="background:#DA8835" class="light">agni amber<br>#DA8835</div>
+    <div style="background:#89370F">ember earth<br>#89370F</div>
+    <div style="background:#226D8A">jal deep<br>#226D8A</div>
+    <div style="background:#5AAFD0" class="light">jal light<br>#5AAFD0</div>
+    <div style="background:#4FCAD7" class="light">quantum<br>#4FCAD7</div>
+    <div style="background:#091625">quantum night<br>#091625</div>
+    <div style="background:#F1E8D6" class="light">cosmic bone<br>#F1E8D6</div>
+    <div style="background:#C28A45" class="light">panchaloha<br>#C28A45</div>
+    <div style="background:#C97467" class="light">lotus<br>#C97467</div>
+    <div style="background:#212729">basalt ink<br>#212729</div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3 class="disp">ratios &amp; pairs</h3><ul class="tight">
+      <li>UI surfaces: 70% ground (bone or night) · 20% ink · 5% agni · 5% jal. The full emblem is the only intentionally dense colour field.</li>
+      <li>Quantum cyan appears only on evidence, "finding" tags and the field-knot. It never becomes generic decoration.</li>
+      <li>Panchaloha appears only on "frontier" tags and spoken-emphasis cards. It is never a generic button or link colour.</li>
+      <li>Lotus, terracotta, basalt and wood are material colours inside the identity or relevant editorial photography, not interface accents.</li>
+      <li>Accessible pairs: agni amber on night 6.6:1; ember earth on bone 6.6:1; jal deep on bone 4.8:1; jal light on night 7.4:1; quantum on night 9.3:1; quantum ink on bone 5.0:1.</li>
+      <li>OS colour preference never swaps page roles: reading pages stay bone; Home, PLAY and AWAKE stay night.</li>
+    </ul></div>
+    <div class="card"><h3 class="disp">the field-knot motif</h3><p>Derived from the emblem's centre: two open phase curves cross one thin quantum seam. It marks sections, evidence transitions and the meeting of two modes. Keep it spare, line-only and secondary. Never close it into a badge; never detach a sacred artifact to use as UI. Fire and ocean may expand only inside the complete identity or a deliberate full-bleed editorial field. The Penrose stair and observer profiles are long-form surrealist metaphors, not navigation icons.</p></div>
+  </div>
+  <div class="grid2 type">
+    <div class="spec"><img src="brand/awarewolf_mark_v15.webp" width="88" height="88" alt="AwareWolf v15 mark" style="width:88px"><p class="role"><b>Identity handle</b> — <b>aware._wolf_</b> exists inside the artwork. Never recreate it in a font or repair punctuation with an overlay.</p></div>
+    <div class="spec"><p class="disp" style="font-size:44px;margin:0">presence changes the point.</p><p class="role"><b>Anton</b> (Impact on video) — headlines and every burned caption, always lowercase.</p></div>
+    <div class="spec"><p style="font-size:21px;margin:0">Twenty people, no control group. So honestly, we don't know.</p><p class="role"><b>Karla</b> — body and UI. Warm, plain, slightly rounded. Emphasis by shorter sentence, not italics.</p></div>
+    <div class="spec"><p class="skt" lang="sa" style="font-size:40px;margin:0;color:var(--accent)">क्षेत्रज्ञ</p><p class="translation">kṣetrajña · the knower of the field</p><p class="role"><b>Tiro Devanagari Sanskrit</b> — Sanskrit only, always with an English line directly beneath. Agni, jal, quantum or ink according to meaning; never panchaloha for decoration.</p></div>
+  </div>
+</section>
+
+<section id="c9">
+  <p class="num">09</p>
+  <h2 class="disp">video, <span>motion, sound</span></h2>
+  <div class="grid3">
+    <div class="card"><h3 class="disp">picture</h3><ul class="tight">
+      <li>Real footage only. No stock or generated b-roll. Outside the complete identity, no generic lotus, monk, galaxy, glowing brain or floating sacred object.</li>
+      <li>Vertical 1080×1920. Landscape sources use full-frame blurred letterbox — never crop out the action.</li>
+      <li>Native speed. No slow motion, ever.</li>
+      <li>Beats 1.8–4s; money moments 3–4s; cut on the completed action.</li>
+      <li>Burned-in "receipts" from the original footage (GOAL!, location tags) stay. Brand captions move around them.</li>
+    </ul></div>
+    <div class="card"><h3 class="disp">captions &amp; motion</h3><ul class="tight">
+      <li>Anton/Impact, white on black@45%, 16px box padding, centred, y = 13% (or below any existing burned text).</li>
+      <li>Normal line 56px; "big line" 88px in panchaloha or ivory, max three per reel.</li>
+      <li>Every card synced to spoken word timestamps. No card outlives its sentence by more than 0.9s.</li>
+      <li>Pop-in 0.4s alpha ramp. No slides, no bounces, no zoom-punches.</li>
+      <li>Evidence lower-third: Karla caps, quantum cyan, "journal · month year · n=" — appears for the full duration of the claim.</li>
+    </ul></div>
+    <div class="card"><h3 class="disp">sound</h3><ul class="tight">
+      <li>VO: Ritwik VO on ElevenLabs Multilingual v2 — stability 0.31, similarity 1.0, style 1.0, speed 1.1. No inline tags.</li>
+      <li>VO placed sentence by sentence with 0.3–1.0s breaths; never a gap over 1.5s mid-reel.</li>
+      <li>Bed: the friends' jam, looped, at 0.85 under VO; clip audio at 0.22.</li>
+      <li>Endings are one continuous recording — pre-rolled under the last shots, no splices.</li>
+      <li>Last word ends ~0.4s before the closing cut; the closer's music is already up.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="c10">
+  <p class="num">10</p>
+  <h2 class="disp">content <span>architecture</span></h2>
+  <p class="lede">Four series, two keywords, one cadence. Each series carries a Sanskrit name from chapter 04 so the system is legible to the pack over time.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>series</th><th>name</th><th>pillar</th><th>format · duration</th><th>keyword</th><th>next up</th></tr></thead>
+    <tbody>
+      <tr><td class="k">play everything</td><td><span class="skt" lang="sa" style="font-size:20px">आनन्द</span><span class="translation">ānanda · joy</span></td><td>field</td><td>story montage · 66.66 / 77.77s · your VO · captions</td><td class="key">PLAY</td><td>"in april i was in a hospital bed." (footage scouted)</td></tr>
+      <tr><td class="k">awake</td><td><span class="skt" lang="sa" style="font-size:20px">साक्षी</span><span class="translation">sākṣī · the witness</span></td><td>lab</td><td>talking head · 88.88s · tiered study cards</td><td class="key">AWAKE</td><td>"the questions have started to rhyme" (script done)</td></tr>
+      <tr><td class="k">sanatan, tested</td><td><span class="skt" lang="sa" style="font-size:20px">क्षेत्रज्ञ</span><span class="translation">kṣetrajña · the knower of the field</span></td><td>mat</td><td>one practice · 44.44s · what it is / what science says / 7 days of doing it</td><td class="key">AWAKE</td><td>nāḍī śodhana vs the HRV literature</td></tr>
+      <tr><td class="k">one evening</td><td><span class="skt" lang="sa" style="font-size:20px">योग</span><span class="translation">yoga · joining</span></td><td>field</td><td>raw phone · 22.22s · one thing from zero</td><td class="key">PLAY</td><td>pickleball rematch; 50 free throws</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h3 class="disp">cadence (the practice)</h3><ul class="tight">
+      <li><b>Sunday</b> — play everything <i>or</i> sanatan, tested (alternate weeks).</li>
+      <li><b>Wednesday, fortnightly</b> — awake.</li>
+      <li><b>Whenever it happens</b> — one evening, same day it's filmed.</li>
+      <li><b>Daily story</b> — one frame from the field, no caption, mark stamp only.</li>
+      <li>Every reel: angel-number duration, one keyword, one honest learning moment, journal+year if a claim is made.</li>
+    </ul></div>
+    <div class="card"><h3 class="disp">the two pages</h3><ul class="tight">
+      <li><b>PLAY</b> → play-everything.netlify.app — the spinner picks your one for the week. Live.</li>
+      <li><b>AWAKE</b> → same design language: the studies behind the last reel, each with a tier tag, one plain-English line, and the link. To build.</li>
+      <li>Both pages: quantum-night ground, Anton captions, field-knot phase marker, v15 mark in the header, full identity only where it has room to breathe.</li>
+      <li>DM copy is in your voice and ends with "send me the proof. i reply to all of them."</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="c11">
+  <p class="num">11</p>
+  <h2 class="disp">the <span>pack</span></h2>
+  <p class="lede">Svāna, the dog who stayed. Followers are not an audience; they are the ones who came along. The community system is built on proof, not applause.</p>
+  <div class="grid3">
+    <div class="card"><h3 class="disp">the proof loop</h3><p>Comment the keyword → get the page → screenshot your pick → go do it → send the proof. Every proof is reposted to stories with the mark stamp. Every month the proofs become a reel: "you actually went."</p></div>
+    <div class="card"><h3 class="disp">the howl</h3><p>Sunday night story: one question, "what did you play this week?" Answers reposted. It is the brand's only recurring ritual and it never sells anything.</p></div>
+    <div class="card"><h3 class="disp">pack rules</h3><p>Reply to every comment in the first hour in your texting voice. Never pin praise. Pin the clearest learning moment. Correct yourself publicly when a study turns out weaker than you said — that correction is content.</p></div>
+  </div>
+</section>
+
+<section id="c12">
+  <p class="num">12</p>
+  <h2 class="disp">applications</h2>
+  <p class="lede">Three canonical layouts. Everything published should be recognisable as one of these.</p>
+  <div class="apps">
+    <div><div class="phone">
+        <div class="cap"><span>that's the day</span><span>you got old.</span><span class="g">not a birthday.</span></div>
+        <img class="mark" src="brand/awarewolf_mark_v15.webp" width="192" height="192" alt="">
+      </div><p class="appcap"><b>reel frame</b> — captions at 13%, big line in panchaloha, v15 mark stamp bottom-right after VO ends.</p></div>
+    <div><div class="phone">
+        <div class="cap" style="top:10%"><span style="font-size:16px;background:rgba(0,0,0,.6)">awake · 02</span><span>a week of sitting</span><span>did what a drug does.</span></div>
+        <div class="lt">finding<b>Communications Biology · Nov 2025 · n=20</b></div>
+        <img class="mark" src="brand/awarewolf_mark_v15.webp" width="192" height="192" alt="">
+      </div><p class="appcap"><b>awake frame</b> — series tag top, claim as caption, tiered evidence lower-third in quantum cyan.</p></div>
+    <div><div class="phone" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:20px">
+        <img src="brand/awarewolf_identity_v15.webp" width="640" height="640" alt="" style="width:86%">
+        <div style="text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center"><span style="display:inline-block;background:rgba(0,0,0,.55);color:#fff;font-family:Anton,Impact,sans-serif;font-size:15px;padding:5px 9px">follow this account</span><span style="display:inline-block;background:rgba(0,0,0,.55);color:var(--frontier);font-family:Anton,Impact,sans-serif;font-size:22px;padding:5px 10px">comment play</span><span style="display:inline-block;background:rgba(0,0,0,.55);color:#fff;font-family:Anton,Impact,sans-serif;font-size:13px;padding:4px 8px">and let me choose what you play today</span></div>
+      </div><p class="appcap"><b>end card</b> — full v15 identity on quantum night above the CTA stack.</p></div>
+  </div>
+  <div class="grid3" style="align-items:center">
+    <div><div class="avatar"><img src="brand/awarewolf_mark_v15.webp" width="192" height="192" alt=""></div><p class="appcap"><b>avatar</b> — official mark crop centred in the platform circle.</p></div>
+    <div class="card"><h3 class="disp">cover frame</h3><p>Always the hook frame (the dog at 1.2s in reel 1). No text overlay beyond what's burned in. The mark is not on covers — the grid should read as footage, not logos.</p></div>
+    <div class="card"><h3 class="disp">story template</h3><p>Quantum-night ground, one photo or clip full-bleed, v15 mark stamp bottom-right, optional single Anton line at 13%. Proof reposts add the pack member's handle in Karla caps, bone.</p></div>
+  </div>
+  <div class="grid2" style="align-items:center">
+    <div class="card"><img src="brand/ritwik-founder-portrait-v3.webp" width="640" height="857" alt="Ritwik Chakradhar smiling in sunglasses and an AwareWolf shirt above a city and bay"></div>
+    <div class="card"><h3 class="disp">founder portrait</h3><p><b>Current asset:</b> <code>ritwik-founder-portrait-v3.webp</code>. Use for bios, press kits and creator introductions. Keep the outdoor city-and-bay setting, natural light, sunglasses, smile, 3:4 portrait framing and complete shirt graphic. A tighter platform crop is permitted only when the face and full shirt emblem remain visible. The shirt print belongs to this approved photograph; standalone identity work always uses the v15 master.</p></div>
+  </div>
+</section>
+
+<section id="c13">
+  <p class="num">13</p>
+  <h2 class="disp">pre-publish <span>checklist</span></h2>
+  <p class="lede">Twelve checks. If any fails, it doesn't go out.</p>
+  <ul class="check">
+    <li>Duration is an angel number to six decimals (ffprobe-verified).</li>
+    <li>There is one honest learning moment on screen; Ritwik is capable, present and still getting better.</li>
+    <li>Every factual claim has journal + year on screen and a tier tag.</li>
+    <li>Every Sanskrit word has an English line under it; every verse has its address.</li>
+    <li>Exactly one keyword; the DM page for it is live and tested.</li>
+    <li>Script was read against the footage: no line contradicts what's on screen.</li>
+    <li>VO gaps ≤ 1.0s mid-reel; ending is one continuous recording.</li>
+    <li>Captions don't cover burned-in text; big lines ≤ 3.</li>
+    <li>Official v15 mark appears after the VO ends; full v15 identity appears on the end card, neither recoloured nor rebuilt.</li>
+    <li>No banned words (manifest, vibration, frequency, "quantum" untiered).</li>
+    <li>Caption written in your voice, ends with the keyword line, hashtags in first comment.</li>
+    <li>Filed to Drive under <code>YYYY-MM-DD_project_asset_vN.ext</code>.</li>
+  </ul>
+</section>
+
+<section id="c14">
+  <p class="num">14</p>
+  <h2 class="disp">sources</h2>
+  <ul class="src">
+    <li>Viṣṇu Sahasranāma (Mahābhārata, Anuśāsana Parva 149) with Śaṅkara's bhāṣya — names 1 Viśvam, 15 Sākṣī, 16 Kṣetrajña, 17 Akṣaram, 18 Yogaḥ, ~525–527 Ānandaḥ Nandanaḥ Nandaḥ.</li>
+    <li>Śiva Sahasranāma (Mahābhārata, Anuśāsana Parva 17; recensions vary) — Paśupati, Sthāṇu, Chandramauli, Mṛgavyādha. Mṛgavyādha as Sirius: Vedic astronomy; Yajñamṛgavyādha at Śānti Parva 290.159.</li>
+    <li>Bhagavad Gītā 13.1–2 (kṣetra / kṣetrajña). Mahāprasthānika Parva (the dog and Yudhiṣṭhira).</li>
+    <li>Nobel Prize in Physics 2025 — Clarke, Devoret, Martinis: macroscopic quantum tunnelling and energy quantisation in an electric circuit.</li>
+    <li>COGITATE adversarial collaboration — Nature, April 2025 (IIT vs GNWT, n=256).</li>
+    <li>UCSD 7-day retreat — Communications Biology, Nov 2025 (n=20, observational).</li>
+    <li>MIDUS religiosity &amp; epigenetic ageing — Psychoneuroendocrinology, May 2026 (n=1310).</li>
+    <li>Awe RCT — Scientific Reports, 2025.</li>
+    <li>Quantum microtubule hypothesis — Neuroscience of Consciousness, 2025 (contested).</li>
+    <li>Quantum coherence in photosynthetic complexes — Chemical Society Reviews, 2026; NV-diamond neural sensing review, 2026.</li>
+    <li>Frank, Gleiser &amp; Thompson, <i>The Blind Spot</i> (MIT Press, 2024).</li>
+    <li><a href="https://www.metmuseum.org/art/collection/search/39328">The Metropolitan Museum of Art: Shiva as Lord of Dance (Nataraja)</a> — damaru, agni and the flaming cosmic aureole.</li>
+    <li><a href="https://www.metmuseum.org/art/collection/search/503431">The Metropolitan Museum of Art: Damaru</a> — hourglass form, skin heads, bead strikers and traditional wood construction.</li>
+    <li><a href="https://www.metmuseum.org/art/collection/search/38530">The Metropolitan Museum of Art: Vishnu Accompanied by Lakshmi and Sarasvati</a> — chakra, śaṅkha, gadā and padma as principal attributes. The final emblem deliberately omits the conch.</li>
+    <li><a href="https://www.metmuseum.org/art/collection/search/849519">The Metropolitan Museum of Art: Shri Sheshanarayana</a> — Nārāyaṇa in the cosmic ocean and Shesha's multiple hoods as a protective canopy. Seven hoods in the emblem are a compositional choice; historical counts vary.</li>
+    <li><a href="https://www.britishmuseum.org/collection/object/A_1890-0517-3">The British Museum: eight-spoked Wheel of the Law</a> — visual precedent for the emblem's carved Dharmachakra. Wheel forms and spoke counts vary across Buddhist art.</li>
+    <li><a href="https://old.sgpc.net/CDN/Siri%20Guru%20Granth%20Sahib%2C%20Romanized.pdf">Shiromani Gurdwara Parbandhak Committee: Siri Guru Granth Sahib</a> — source context for the exact Ik Onkar glyph ੴ. Its use is an acknowledgement, not a claim of doctrinal equivalence.</li>
+    <li><a href="https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/6a95133986a8698a55448d60c7834d15_MIT6_701S10_textbook.pdf">MIT OpenCourseWare: Introduction to Nanoelectronics</a> — the Hamiltonian operator and Schrödinger wave equation. The emblem shows only Ĥψ, not a complete equation.</li>
+  </ul>
+</section>
+
+</main>
+</div>
+<footer>AwareWolf brand system v3 · the witness who dances · rhymes, not proofs · 2026-09-03</footer>
+</body>
+</html>
