@@ -18,13 +18,15 @@ The HTML immediately above that script is the no-JavaScript fallback. Keep it al
 
 Keep the same filenames and replace the files in `brand/`, or update the `src` values site-wide:
 
-- `brand/awarewolf_identity_v14.webp` is the current full emblem and `aware._wolf_` lockup. Its Shiva half uses restrained burnished copper-orange and its Vishnu half uses deep polished Narayan sapphire, with soft highlights and preserved black depth. Its lab-teal bridge is a localized quantum wave packet: oscillations peak near the centre and taper toward both edges. It uses only `Ĥψ`—the Hamiltonian operator acting on the wavefunction—at the centre.
-- `brand/awarewolf_mark_v14.webp` is the current emblem-only navigation mark.
+- `brand/awarewolf_identity_v15.webp` is the current full emblem and `aware._wolf_` lockup. It is the approved radiant surrealist identity: a precisely symmetric Shiva/Narayana wolf, Kailash and seven-hooded Ananta Shesha as matched backdrops, Nataraja fire and Kṣīra Sāgara as the rim, and one continuous quantum field carrying only `Ĥψ` at the centre.
+- `brand/awarewolf_mark_v15.webp` is the current emblem-only navigation crop.
+- `brand/awarewolf_identity_v15_master.png` is the exact 1254×1254 approved master artwork shipped with the brandkit. Do not load this large source file on a webpage; derive future formats from it non-destructively.
+- Sacred artifacts use materially honest construction: living lotus, wood-and-hide damaru, carved-wood eight-spoke Dharmachakra, terracotta Shakti trikoṇa, sandstone Ik Onkar, rustic basalt liṅgam, river-worn Shaligram, and hand-forged aged weapons including Kaumodakī between the lotus and Shaligram.
 - The original supplied assets remain beside them for provenance and rollback.
 
-The colour system assigns the approved reference orange-red (`#DF4B29`) to Shiva, Narayan blue (`#2256A3`) to Vishnu, and evidence teal (`#6FD3C7`) to the quantum bridge alone. Their lighter/darker companions exist only to maintain WCAG AA contrast. Keep the quantum bridge continuous across the two halves; never repeat it as unrelated decoration on each side.
+The website UI continues to use `brand/tokens.css` as its source of truth. The artwork's broader natural-pigment palette is part of the identity image, not permission to introduce new UI colours. Keep the quantum bridge continuous across the two halves; never repeat it as unrelated decoration on each side.
 
-Keep the intrinsic proportions. Do not add CSS filters or recolour the art. The current CSS caps the identity lockup at 520 px.
+Keep the intrinsic proportions. Do not add CSS filters or recolour the art. The current CSS caps the identity lockup at 520 px. The two website-ready v15 files are each below 60 KB.
 
 ## Founder photography
 
