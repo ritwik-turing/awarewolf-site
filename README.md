@@ -50,12 +50,12 @@ Do not auto-trace the master into a vector. Its material texture and surreal tra
 
 ## Founder photography
 
-- `brand/ritwik-founder-portrait-v3.webp` is the current founder portrait for bios, press kits, profile images, and creator introductions. It is the outdoor city-and-bay photograph supplied by Ritwik and is used without visual edits.
-- `brand/ritwik-founder-portrait-v3-master.png` is the exact supplied 1792×2400 production master. Do not load this large file on webpages.
+- `brand/ritwik-founder-portrait-v3.webp` is the current founder portrait for bios, press kits, profile images, and creator introductions. It keeps the supplied outdoor city-and-bay portrait and replaces the superseded shirt graphic with the complete v15 identity.
+- `brand/ritwik-founder-portrait-v3-master.png` is the 1084×1451 production master with the corrected v15 shirt print. Do not load this large file on webpages.
 - `brand/ritwik-founder-square-v1.webp` is archived. Do not use it in new work.
 - Keep the original 3:4 portrait whenever the placement allows. A tighter platform crop is permitted only when the face and complete shirt graphic remain visible.
-- Do not regenerate, beautify, replace the background, recolour the shirt, or separate the shirt emblem from its `aware._wolf_` handle.
-- The shirt print belongs to this approved photograph, but it is not a substitute logo master. For every standalone identity use, return to the v15 files above.
+- Do not further regenerate, beautify, replace the background, recolour the shirt, or separate the shirt emblem from its exact `aware._wolf_` handle.
+- The shirt uses the complete latest v15 identity, including its sacred-material composition, continuous quantum bridge and exact trailing underscore. For every standalone identity use, return to the v15 files above rather than extracting the photographed print.
 - The current web derivative is 640×857 and below 60 KB.
 
 ## Deploy to Netlify
